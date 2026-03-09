@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrino</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#pocetna">Početna</a>
+      <a href="#onama">O nama</a>
+      <a href="#nutritijenti">Nutritijenti</a>
+      <a href="#poredjenje">Poređenje</a>
+      <a href="#obrok">Obroci</a>
+      <a href="#lab">Laboratorija</a>
+    </nav>
+
+    <header id="pocetna" class="container hero">
+      <div class="heroGrid">
+        <div class="heroText">
+          <h1>Nutri analiza hrane</h1>
+          <p class="subtitle">
+            MVP: pretraga namirnica, prikaz nutritijenata, vizuelizacije u D3.js,
+            poređenje i izračun ukupnih vrednosti obroka.
+          </p>
+          <div class="heroCtas">
+            <a class="btn" href="#nutritijenti">Pogledaj nutritijente</a>
+            <a class="btn btnGhost" href="#poredjenje">Poređenje i obrok</a>
+          </div>
+        </div>
+
+       <img class="heroImage" src="img/slika1.jpg" alt="Nutri aplikacija" />
+      </div>
+    </header>
+
+    <section id="onama" class="container section">
+      <div class="card">
+        <h2 class="animatedTitle">O projektu</h2>
+        <p class="muted">
+          Ideja aplikacije je da nutritivne informacije učini dostupnim i razumljivim bez
+          komplikovanja. Umesto nepreglednih tabela, podaci se prikazuju jasno i vizuelno,
+          tako da korisnik brzo dobija uvid u ključne vrednosti.
+        </p>
+        <p class="muted">
+          MVP omogućava pretragu namirnica, pregled kalorija i makro/mikronutrijenata
+          po standardnoj meri (na 100g), poređenje dve namirnice kroz drugačiju vizuelizaciju,
+          kao i sastavljanje obroka sa ukupnim nutritivnim vrednostima. Dodata je i informativna
+          sekcija laboratorijskih parametara, bez medicinskih zaključaka.
+        </p>
+      </div>
+    </section>
+
+    <main id="nutritijenti" class="container section grid">
+      <section class="card">
+        <h2>Pretraga namirnica</h2>
+        <input id="search" type="text" placeholder="Unesi naziv (npr. banana, piletina)..." />
+        <div id="list" class="list"></div>
+      </section>
+
+      <section class="card">
+        <h2>Nutritijenti</h2>
+        <div id="details" class="muted">Izaberi namirnicu sa leve strane.</div>
+
+        <div class="charts">
+          <div>
+            <h3>Makronutrijenti (na 100g)</h3>
+            <svg id="macroChart" width="420" height="220"></svg>
+          </div>
+          <div>
+            <h3>Mikronutrijenti (odabrani)</h3>
+            <svg id="microChart" width="420" height="220"></svg>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- POREĐENJE + OBROK + LAB -->
+    <section id="poredjenje" class="container section">
+      <div class="card">
+        <h2>Poređenje namirnica</h2>
+        <div class="compareRow">
+          <select id="compareA"></select>
+          <select id="compareB"></select>
+        </div>
+
+        <!-- Radar chart -->
+        <div class="twoCol">
+          <div>
+            <svg id="compareRadar" width="520" height="320"></svg>
+            <p class="muted small">
+              Radar prikaz poredi: kalorije, proteine, UH i masti (na 100g). Vrednosti su normalizovane
+              radi poređenja (vizuelna razlika, ne medicinski zaključak).
+            </p>
+          </div>
+          <div class="muted">
+            <div id="compareText" class="compareText"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="obrok" class="card mt16">
+        <h2>Obrok (ukupni nutritijenti)</h2>
+        <p class="muted">
+          Izaberi više namirnica i unesi gramažu. Sistem računa ukupne kalorije i makronutrijente za ceo obrok.
+        </p>
+
+        <div class="mealGrid">
+          <div>
+            <div class="mealPick">
+              <select id="mealFood"></select>
+              <input id="mealGrams" type="number" min="1" value="100" />
+              <button id="mealAdd" class="btnInline">Dodaj</button>
+              <button id="mealClear" class="btnInline btnInlineGhost">Očisti</button>
+            </div>
+
+            <div id="mealList" class="mealList muted small">
+              Nema dodatih namirnica. Dodaj 2–4 stavke za demo.
+            </div>
+          </div>
+
+          <div>
+            <div id="mealTotals" class="mealTotals"></div>
+            <svg id="mealMacroStack" width="520" height="220"></svg>
+            <p class="muted small">Stacked bar prikaz makronutrijenata (g) za ceo obrok.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="lab" class="card mt16">
+        <h2>Laboratorijske analize (informativno)</h2>
+        <p class="muted">
+          Ova sekcija služi samo za objašnjenje osnovnih parametara i tipičnih referentnih opsega.
+          Aplikacija ne daje dijagnoze i ne zamenjuje savet lekara.
+        </p>
+
+        <div id="labCards" class="labGrid"></div>
+      </div>
+    </section>
+
+    <footer class="container footer">
+      <span class="muted small">Podaci su demo (MVP) i služe u edukativne svrhe.</span>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "banana",
+    "name": "Banana",
+    "category": "Voće",
+    "per100g": { "kcal": 89, "protein_g": 1.1, "carbs_g": 22.8, "fat_g": 0.3, "vitC_mg": 8.7, "vitB6_mg": 0.4, "potassium_mg": 358 }
+  },
+  {
+    "id": "apple",
+    "name": "Jabuka",
+    "category": "Voće",
+    "per100g": { "kcal": 52, "protein_g": 0.3, "carbs_g": 13.8, "fat_g": 0.2, "vitC_mg": 4.6, "potassium_mg": 107 }
+  },
+  {
+    "id": "orange",
+    "name": "Pomorandža",
+    "category": "Voće",
+    "per100g": { "kcal": 47, "protein_g": 0.9, "carbs_g": 11.8, "fat_g": 0.1, "vitC_mg": 53.2, "folate_ug": 30, "potassium_mg": 181 }
+  },
+  {
+    "id": "broccoli",
+    "name": "Brokoli",
+    "category": "Povrće",
+    "per100g": { "kcal": 34, "protein_g": 2.8, "carbs_g": 6.6, "fat_g": 0.4, "vitC_mg": 89.2, "vitK_ug": 102, "folate_ug": 63, "potassium_mg": 316 }
+  },
+  {
+    "id": "spinach",
+    "name": "Spanać",
+    "category": "Povrće",
+    "per100g": { "kcal": 23, "protein_g": 2.9, "carbs_g": 3.6, "fat_g": 0.4, "iron_mg": 2.7, "magnesium_mg": 79, "vitK_ug": 483, "folate_ug": 194 }
+  },
+  {
+    "id": "chicken_breast",
+    "name": "Pileća prsa",
+    "category": "Meso",
+    "per100g": { "kcal": 165, "protein_g": 31.0, "carbs_g": 0.0, "fat_g": 3.6, "vitB6_mg": 0.6, "iron_mg": 1.0, "potassium_mg": 256 }
+  },
+  {
+    "id": "salmon",
+    "name": "Losos",
+    "category": "Riba",
+    "per100g": { "kcal": 208, "protein_g": 20.4, "carbs_g": 0.0, "fat_g": 13.4, "vitD_ug": 10.9, "vitB12_ug": 3.2, "selenium_ug": 36 }
+  },
+  {
+    "id": "eggs",
+    "name": "Jaje",
+    "category": "Proteini",
+    "per100g": { "kcal": 143, "protein_g": 12.6, "carbs_g": 0.7, "fat_g": 9.5, "vitB12_ug": 1.1, "vitD_ug": 2.0, "iron_mg": 1.8 }
+  },
+  {
+    "id": "oats",
+    "name": "Ovsene pahuljice",
+    "category": "Žitarice",
+    "per100g": { "kcal": 389, "protein_g": 16.9, "carbs_g": 66.3, "fat_g": 6.9, "iron_mg": 4.7, "magnesium_mg": 177, "vitB1_mg": 0.8 }
+  },
+  {
+    "id": "rice_cooked",
+    "name": "Pirinač (kuvan)",
+    "category": "Žitarice",
+    "per100g": { "kcal": 130, "protein_g": 2.4, "carbs_g": 28.2, "fat_g": 0.3, "potassium_mg": 35 }
+  },
+  {
+    "id": "bread_wholegrain",
+    "name": "Hleb integralni",
+    "category": "Žitarice",
+    "per100g": { "kcal": 247, "protein_g": 13.0, "carbs_g": 41.0, "fat_g": 4.2, "iron_mg": 3.6, "magnesium_mg": 91 }
+  },
+  {
+    "id": "yogurt_plain",
+    "name": "Jogurt (običan)",
+    "category": "Mlečni proizvodi",
+    "per100g": { "kcal": 61, "protein_g": 3.5, "carbs_g": 4.7, "fat_g": 3.3, "calcium_mg": 121, "vitB12_ug": 0.5, "potassium_mg": 155 }
+  },
+  {
+    "id": "milk_2",
+    "name": "Mleko 2%",
+    "category": "Mlečni proizvodi",
+    "per100g": { "kcal": 50, "protein_g": 3.4, "carbs_g": 4.8, "fat_g": 2.0, "calcium_mg": 120, "vitB12_ug": 0.5 }
+  },
+  {
+    "id": "almonds",
+    "name": "Bademi",
+    "category": "Orašasti plodovi",
+    "per100g": { "kcal": 579, "protein_g": 21.2, "carbs_g": 21.6, "fat_g": 49.9, "magnesium_mg": 268, "vitE_mg": 25.6, "calcium_mg": 269 }
+  }
+]
